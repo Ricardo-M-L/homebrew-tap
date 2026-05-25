@@ -5,21 +5,21 @@
 class Anthrogo < Formula
   desc "A Go port of Anthropic's Claude Code CLI — TUI + headless + HTTP + web UI"
   homepage "https://github.com/Ricardo-M-L/anthrogo"
-  version "0.14.1"
+  version "0.14.2"
   license "AGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.1/anthrogo_0.14.1_darwin_x86_64.tar.gz"
-      sha256 "f3e4cf33a77563515adeb819ed007a4ff1457e13db0e807a1f475126b9c200d5"
+      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.2/anthrogo_0.14.2_darwin_x86_64.tar.gz"
+      sha256 "ed26700586d0b5c1dc82fb7e241ee23c83d60a388c147f776c3b8d13aeb15146"
 
       define_method(:install) do
         bin.install "anthrogo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.1/anthrogo_0.14.1_darwin_arm64.tar.gz"
-      sha256 "775b8922e2f83f0ed2d6890e94d1142ca916080c3ec9534a5cb291d69507a486"
+      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.2/anthrogo_0.14.2_darwin_arm64.tar.gz"
+      sha256 "fe066688db7b8e91baeba523023cf2800102745c81ddb9619a27c9eaa8316c0e"
 
       define_method(:install) do
         bin.install "anthrogo"
@@ -29,15 +29,15 @@ class Anthrogo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.1/anthrogo_0.14.1_linux_x86_64.tar.gz"
-      sha256 "300f4ceae56e0e06d928aa2d560e52d9aa18f30e8c7cedf90d4330d84e03bbee"
+      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.2/anthrogo_0.14.2_linux_x86_64.tar.gz"
+      sha256 "2d2a36969f96ee1dcb54a4826a82069676a3be71a6cf7dadc5a7b32611050360"
       define_method(:install) do
         bin.install "anthrogo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.1/anthrogo_0.14.1_linux_arm64.tar.gz"
-      sha256 "02929c3c405b11682e749339da3696f75df862bfbef9ee14f01874d8a91a77e4"
+      url "https://github.com/Ricardo-M-L/anthrogo/releases/download/v0.14.2/anthrogo_0.14.2_linux_arm64.tar.gz"
+      sha256 "91c7859ad871fb91b56e75c1c628ccbae499f71b61c6d44766e40471f17ee14e"
       define_method(:install) do
         bin.install "anthrogo"
       end
